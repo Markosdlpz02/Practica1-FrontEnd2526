@@ -8,20 +8,20 @@ Para poder probar este proyecto, he seguido estos pasos:
 
 1. **Instalar las dependencias generales:**
    npm install
-   ```
+   
 
 2. **Instalar Axios (necesario para las peticiones a la API):**
    npm install axios
-   ```
+   `
 3. **Añadir un .env:**
    A la hora de clonar mi repositorio, no funcionará ya que la url de la API se llama desde una variable de entorno para que no aparezca y sea secreto.
 
    Tendrás que añadir un .env y poner la url con este nombre: VITE_API_URL = XXXXXXXXXXXXX
-   ```
+   
 
 4. **Arrancar el servidor:**
    npm run dev
-   ```
+   
 
 ## Explicacion del Proyecto
 
@@ -51,5 +51,3 @@ Durante el desarrollo de la practica me encontre con varios problemas que pude i
 
 3. **Llamada doble a la API al inicio:**
    Me di cuenta de que, al iniciar la aplicacion, se hacia la peticion a la API dos veces. En ejercicios anteriores de clase no se daba importancia y nos lo va a explicar en el futuro, pero en esta app, al acumular personajes, el fallo se notaba bastante. Investigue y vi que el causante era el componente `<StrictMode>` que envuelve a `<App />` en el archivo `main.tsx`. Entendi que es un comportamiento normal en desarrollo para detectar errores.
-
-```
