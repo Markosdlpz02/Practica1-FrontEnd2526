@@ -1,0 +1,15 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: solid 2px #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.characterDataContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
